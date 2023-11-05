@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CategoryUpdateActivity">
+
+    <EditText
+        android:id="@+id/edtCategoryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên danh mục"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/edtCategoryDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mô tả danh mục"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnUpdateCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cập nhật danh mục"/>
+
+</LinearLayout>

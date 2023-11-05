@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="@drawable/img_9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="12dp"
+        android:padding="12dp"
+        android:orientation="vertical"
+        android:background="#A4F4EFEF">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorGreen"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"/>
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+        <EditText
+            android:id="@+id/editVerifyPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Verify password"
+            android:inputType="textPassword"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:backgroundTint="@color/colorxanh"
+            />
+
+        <TextView
+            android:id="@+id/textSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Sign In"
+            android:textColor="@color/colorxanh"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            />
+
+    </LinearLayout>
+</FrameLayout>

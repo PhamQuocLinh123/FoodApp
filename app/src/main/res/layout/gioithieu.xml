@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99FFCC"
+    tools:context=".GioithieuActivity">
+
+    <ImageView
+        android:id="@+id/restaurantImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_27" />
+
+    <TextView
+        android:id="@+id/restaurantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/restaurantImage"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="16dp"
+        android:text="QULIFOOD"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/restaurantSlogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/restaurantName"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="8dp"
+        android:text="Mang đến niềm vui của ẩm thực!"
+        android:textColor="@color/colorxanh" />
+
+    <LinearLayout
+        android:id="@+id/imagesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/restaurantSlogan"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_29" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_30" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_31" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/restaurantAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagesLayout"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="16dp"
+        android:text="Địa chỉ: 123 PHÚ MỸ HƯNG" />
+
+    <TextView
+        android:id="@+id/restaurantWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/restaurantAddress"
+        android:layout_centerHorizontal="true"
+        android:text="Website: www.qulifood.com"
+        android:textColor="@color/colorxanh" />
+
+    <TextView
+        android:id="@+id/restaurantHOTLINE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/restaurantWebsite"
+        android:text="Hotline: 0919999666"
+        android:textColor="@color/colorxanh" />
+    <Button
+        android:id="@+id/menuButtonBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Menu" />
+
+
+
+</RelativeLayout>
